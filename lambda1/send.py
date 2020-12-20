@@ -40,13 +40,13 @@ def findDest(message):
     # Tentamos induzir uma mensagem ao erro para que esta seja redirecionada à SQS DLQ
     if num >= 5:
         print (num)
-        sqs = SqsHandler('https://sqs.us-east-1.amazonaws.com/331437564581/terraform-example-queue_dev')
+        sqs = SqsHandler('<INSIRA A URL DA FILA SQS PRINCIPAL>')
         sqs.send(message)
         send = "Message send to Principal"
         
     else:
         print (num)
-        sqs = SqsHandler('https://sqs.us-east-1.amazonaws.com/331437564581/terraform-example-queue-deadletter_dev')
+        sqs = SqsHandler('<INSIRA A URL DA FILA SQS SECUNDARIA DLQ>')
         sqs.send(message)
         send = "Message send to DLQ"
     

@@ -7,7 +7,7 @@ import json
 from aws_xray_sdk.core import xray_recorder
 from aws_xray_sdk.core import patch_all
 
-xray_recorder.configure(service='trabalho10')
+xray_recorder.configure(service='trabalho30')
 plugins = ('ElasticBeanstalkPlugin', 'EC2Plugin')
 xray_recorder.configure(plugins=plugins)
 patch_all()
@@ -16,7 +16,7 @@ def lambda_handler(event, context):
     
     message = json.dumps(event)
     sns = boto3.client('sns')
-    sns.publish(TopicArn='arn:aws:sns:us-east-1:331437564581:terraform-updates-topic_dev',Message=message)
+    sns.publish(TopicArn='<INSIRA O ARN DO TOPICO SNS>',Message=message)
     
     print(message)
 

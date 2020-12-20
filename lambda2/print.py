@@ -7,7 +7,7 @@ import json
 from aws_xray_sdk.core import xray_recorder
 from aws_xray_sdk.core import patch_all
 
-xray_recorder.configure(service='trabalho10')
+xray_recorder.configure(service='trabalho20')
 plugins = ('ElasticBeanstalkPlugin', 'EC2Plugin')
 xray_recorder.configure(plugins=plugins)
 patch_all()
