@@ -1,5 +1,8 @@
 # pré-configuração:
+
 https://github.com/vamperst/Hackaton-exercises-terraform/tree/master/Setup%20e%20Configura%C3%A7%C3%A3o
+
+## configuração
 
 cd ~/environment
 
@@ -24,6 +27,8 @@ terraform apply -auto-approve
 #terraform init
 
 #terraform apply -auto-approve
+
+## continuação
 
 cd ..
 
@@ -68,6 +73,7 @@ pip3 install -r requirements.txt -t layer
 sls deploy
 
 ## OBS: fazer a subscrição manual no tópico _DEV para receber notificação por e-mail
+
 
 # REPLICANDO EM PROD
 
