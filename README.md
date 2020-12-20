@@ -95,7 +95,9 @@ mkdir layer
 
 pip3 install -r requirements.txt -t layer
 
-## editar o arquivo send.py e trocar as urls das filas para prod
+```bash
+editar o arquivo send.py e trocar as urls das filas para prod
+```
 
 sls deploy --stage prod
 
@@ -105,7 +107,9 @@ mkdir layer
 
 pip3 install -r requirements.txt -t layer
 
-## editar o arquivo serverless.yml e trocar as ARNs das filas para prod
+```bash
+editar o arquivo serverless.yml e trocar as ARNs das filas para prod
+```
 
 sls deploy --stage prod
 
@@ -115,7 +119,9 @@ mkdir layer
 
 pip3 install -r requirements.txt -t layer
 
-## editar o arquivo serverless.yml e send_to_topic.py e trocar as ARNs/URLs das filas para prod
+```bash
+editar o arquivo serverless.yml e send_to_topic.py e trocar as ARNs/URLs das filas para prod
+```
 
 sls deploy --stage prod
 
