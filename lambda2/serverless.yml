@@ -23,6 +23,10 @@ frameworkVersion: '2'
 provider:
   name: aws
   runtime: python3.8
+  tracing:
+      apiGateway: true
+      lambda: true
+        
 #  memorySize: 128
 #  timeout: 300
 # you can overwrite defaults here
